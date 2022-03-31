@@ -10,7 +10,7 @@ public class Principal {
    */
   public static void main(String[] args) {
     // ESCREVA SEU CÓDIGO AQUI
-    Scanner scanner = new Scanner(System.in);
+    Scanner scanner = new Scanner(System.in).useLocale(Locale.US);
     int opcao = 2;
     int menor = 0;
     int adulta = 0;
@@ -49,12 +49,9 @@ public class Principal {
           System.out.println("maiores que 50: " + idoso);
 
           System.out.println("----- Percentual -----");
-          System.out
-              .println("menores: " + String.format(Locale.US, "%.2f", menorPorcentagem) + "%");
-          System.out
-              .println("adultas: " + String.format(Locale.US, "%.2f", adultoPorcentagem) + "%");
-          System.out.println(
-              "maiores que 50: " + String.format(Locale.US, "%.2f", idosoPorcentagem) + "%");
+          System.out.println("menores: " + (menorPorcentagem) + "%");
+          System.out.println("adultas: " + (adultoPorcentagem) + "%");
+          System.out.println("maiores que 50: " + (idosoPorcentagem) + "%");
           System.out.println("TOTAL: " + total);
           break;
         default:
