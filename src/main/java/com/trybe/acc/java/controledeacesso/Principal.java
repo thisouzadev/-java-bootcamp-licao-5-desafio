@@ -9,6 +9,9 @@ public class Principal {
    * Método principal.
    */
   public static void main(String[] args) {
+    /**
+     * Método principal.
+     */
     // ESCREVA SEU CÓDIGO AQUI
     Scanner scanner = new Scanner(System.in).useLocale(Locale.US);
     int opcao = 2;
